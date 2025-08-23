@@ -15,20 +15,19 @@
 
 </head>
 
-<body class="text-[#1d1d1f] m-0 p-0" style="scroll-behavior: smooth; overflow-x: hidden; width: 100vw; height: 100vh;">
+<body class="text-[#1d1d1f] m-0 p-0 h-full w-full" style="scroll-behavior: smooth; overflow-x: hidden;">
 
   <!--Global Navbar -->
-  <nav class="bg-white w-full top-0 start-0 h-10">
+  <nav class="bg-white w-full top-0 start-0 h-10 relative">
 
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto">
 
 
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul
-          class="flex flex-col p-4 md:p-0 mt-4 font-light  items-center rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-light items-center rounded-lg md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0">
 
           <div class="brand flex items-center ">
-            <a href="https://flowbite.com/" class="flex space-x-3 rtl:space-x-reverse">
+            <a href="https:///" class="flex space-x-3 rtl:space-x-reverse">
               <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394 8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187 0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984 2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579 3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32 3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19 1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z">
@@ -57,7 +56,7 @@
 
           <!-- <button type="button" class="text-black bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button> -->
           <button data-collapse-toggle="navbar-sticky" type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center buttonnav p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-sticky" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -70,110 +69,439 @@
 
 
           <!-- Dropdown 1 -->
-          <li class="relative group">
+          <li class="group dropdownMenu">
             <a href="#" class="block py-2  text-black hover:bg-white rounded-md text-[0.8rem]">Store</a>
-            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
-              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            <div class="marry absolute left-0 hidden text-black rounded-md space-y-2 w-[100vw] z-10 group-hover:block">
+              <section class="w-[100vw] pt-[3.3rem] pb-[4.3rem] bg-[#fafafc] navgbody">
+                <div class="" style="margin-inline-start: auto; margin-inline-end:auto; width:100vw; max-width:744px;">
+                  <div class="navcontent flex">
+                    <div>
+                      <ul class="">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">Shop</h1>
+                        <li class="text-2xl font-medium pb-4"><a href="">Shop the Latest</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Mac</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPad</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPhone</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Mac mini</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple Watch</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Accessories</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-20">
+                        <h1 class="text-xs text-[#6e6e73] font-light pb-4">Quick Links</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Find a Store</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Order Status</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Ways to Buy</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-14">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">Shop Special Stores</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Education</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Business</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </li>
-          <li class="relative group">
+
+
+          <!-- Dropdown 2 -->
+          <li class="group dropdownMenu">
             <a href="#" class="block py-2  text-black hover:bg-white rounded-md text-[0.8rem]">Mac</a>
-            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
-              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            <div class="marry absolute left-0 hidden text-black rounded-md space-y-2 w-[100vw] z-10 group-hover:block">
+              <section class="w-[100vw] pt-[3.3rem] pb-[4.3rem] bg-[#fafafc] navgbody">
+                <div class="" style="margin-inline-start: auto; margin-inline-end:auto; width:100vw; max-width:744px;">
+                  <div class="navcontent flex">
+                    <div>
+                      <ul class="">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">Explore Mac</h1>
+                        <li class="text-2xl font-medium pb-4"><a href="">Explore All Mac</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Macbook Air</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Macbook Pro</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iMac</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Mac mini</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Mac Studio</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Mac Pro</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Displays</a></li>
+                        <li class="pt-3 text-xs font-medium"><a href="">Compare Mac</a></li>
+                        <li class="font-medium text-xs "><a href="">Switch from PC to Mac</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-20">
+                        <h1 class="text-xs text-[#6e6e73] font-light pb-4">Shop Mac</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Shop Mac</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Mac Accessories</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Ways to Buy</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-14">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">More from Mac</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Mac Support</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">AppleCare+ for Mac</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">macOS Sequoia</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple Intelligence</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apps by Apple</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Continuity</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">iCloud+</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Mac for Business</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Education</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </li>
+
+
           <!-- Dropdown 3 -->
-          <li class="relative group">
+          <li class="group dropdownMenu">
             <a href="#" class="block py-2  text-black hover:bg-white rounded-md text-[0.8rem]">iPad</a>
-            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
-              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
-              <a href="#" class="block px-4 py-2 text-black hoverunderline">UI/UX</a>
+            <div class="marry absolute left-0 hidden text-black rounded-md space-y-2 w-[100vw] z-10 group-hover:block">
+              <section class="w-[100vw] pt-[3.3rem] pb-[4.3rem] bg-[#fafafc] navgbody">
+                <div class="" style="margin-inline-start: auto; margin-inline-end:auto; width:100vw; max-width:744px;">
+                  <div class="navcontent flex">
+                    <div>
+                      <ul class="">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">Explore iPad</h1>
+                        <li class="text-2xl font-medium pb-4"><a href="">Explore All iPad</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPad Pro</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPad Air</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPad</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPad Mini</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple Pencil</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Keyboards</a></li>
+                        <li class="pt-3 text-xs font-medium"><a href="">Compare iPad</a></li>
+                        <li class="font-medium text-xs "><a href="">Why iPad</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-20">
+                        <h1 class="text-xs text-[#6e6e73] font-light pb-4">Shop iPad</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Shop iPad</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">iPad Accessories</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Ways to Buy</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-14">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">More from iPad</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">iPad Support</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">AppleCare+ for iPad</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">iPadOS 18</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple Intelligence</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apps by Apple</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">iCloud+</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Education</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </li>
+
+
           <!-- Dropdown 4 -->
-          <li class="relative group">
+          <li class="group dropdownMenu">
             <a href="#" class="block py-2  text-black hover:bg-white rounded-md text-[0.8rem]">iPhone</a>
-            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
-              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            <div class="marry absolute left-0 hidden text-black rounded-md space-y-2 w-[100vw] z-10 group-hover:block">
+              <section class="w-[100vw] pt-[3.3rem] pb-[4.3rem] bg-[#fafafc] navgbody">
+                <div class="" style="margin-inline-start: auto; margin-inline-end:auto; width:100vw; max-width:744px;">
+                  <div class="navcontent flex">
+                    <div>
+                      <ul class="">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">Explore iPhone</h1>
+                        <li class="text-2xl font-medium pb-4"><a href="">Explore All iPhone</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPhone 16 Pro</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPhone 16</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPhone 15</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPhone 14</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPhone SE</a></li>
+                        <li class="pt-3 text-xs font-medium"><a href="">Compare iPhone</a></li>
+                        <li class="font-medium text-xs "><a href="">Switch from Android</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-20">
+                        <h1 class="text-xs text-[#6e6e73] font-light pb-4">Shop iPhone</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Shop iPhone</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">iPhone Accessories</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Ways to Buy</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-14">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">More from iPhone</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">iPhone Support</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">AppleCare+ for iPhone</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">iOS 18</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple Intelligence</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apps by Apple</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">iPhone Privacy</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">iCloud+</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Wallet</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Siri</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </li>
 
           <!-- Dropdown 5 -->
-          <li class="relative group">
+          <li class="group dropdownMenu">
             <a href="#" class="block py-2  text-black hover:bg-white rounded-md text-[0.8rem] ">Watch</a>
-            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
-              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            <div class="marry absolute left-0 hidden text-black rounded-md space-y-2 w-48 z-10 group-hover:block">
+              <section class="w-[100vw] pt-[3.3rem] pb-[4.3rem] bg-[#fafafc] navgbody">
+                <div class="" style="margin-inline-start: auto; margin-inline-end:auto; width:100vw; max-width:744px;">
+                  <div class="navcontent flex">
+                    <div>
+                      <ul class="">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">Explore Watch</h1>
+                        <li class="text-2xl font-medium pb-4"><a href="">Explore All Apple Watch</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple Watch Series 10</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple Watch Ultra 2</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple Watch SE</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple Watch Nike</a></li>
+                        <li class="pt-3 text-xs font-medium"><a href="">Compare Watch</a></li>
+                        <li class="font-medium text-xs "><a href="">Why Apple Watch</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-20">
+                        <h1 class="text-xs text-[#6e6e73] font-light pb-4">Shop Watch</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Shop Apple Watch</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple Watch Straps</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple Watch Accessories</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Ways to Buy</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-14">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">More from Watch</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple Watch Support</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">AppleCare+</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">watchOS 11</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple Watch For Your Kids</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apps by Apple</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </li>
 
           <!-- Dropdown 6 -->
-          <li class="relative group">
+          <li class="group dropdownMenu">
             <a href="#" class="block py-2  text-black hover:bg-white rounded-md text-[0.8rem] ">AirPods</a>
-            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
-              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            <div class="marry absolute left-0 hidden text-black rounded-md space-y-2 w-[100vw] z-10 group-hover:block">
+              <section class="w-[100vw] pt-[3.3rem] pb-[4.3rem] bg-[#fafafc] navgbody">
+                <div class="" style="margin-inline-start: auto; margin-inline-end:auto; width:100vw; max-width:744px;">
+                  <div class="navcontent flex">
+                    <div>
+                      <ul class="">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">Explore Watch</h1>
+                        <li class="text-2xl font-medium pb-4"><a href="">Explore AirPods</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">AirPods 4</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">AirPods Pro 2</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">AirPods Max</a></li>
+                        <li class="pt-3 text-xs font-medium"><a href="">Compare AirPods</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-20">
+                        <h1 class="text-xs text-[#6e6e73] font-light pb-4">Shop Mac</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Shop AirPods</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">AirPods Accessories</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-14">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">More from AirPods</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">AirPods Support</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">AppleCare+ for Headphones</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple Music</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </li>
 
+
           <!-- Dropdown 7 -->
-          <li class="relative group">
+          <li class="group dropdownMenu">
             <a href="#" class="block py-2 text-black hover:bg-white rounded-md text-[0.8rem] ">TV & Home</a>
-            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
-              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            <div class="marry absolute left-0 hidden text-black rounded-md space-y-2 w-[100vw] z-10 group-hover:block">
+              <section class="w-[100vw] pt-[3.3rem] pb-[4.3rem] bg-[#fafafc] navgbody">
+                <div class="" style="margin-inline-start: auto; margin-inline-end:auto; width:100vw; max-width:744px;">
+                  <div class="navcontent flex">
+                    <div>
+                      <ul class="">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">Explore TV & Home</h1>
+                        <li class="text-2xl font-medium pb-4"><a href="">Explore TV & Home</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple TV 4K</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Macbook Pro</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">HomePod</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">HomePod mini</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-20">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">Explore TV & Home</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Shop Apple TV 4K</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Shop HomePod</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Shop HomePod mini</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Shop Siri Remote</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">TV & Home Accesories</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-14">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">More from TV & Home</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple TV Support</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">HomePod Support</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">AppleCare+</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple TV app</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple TV+</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Home Apps</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple Music</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">iCloud+</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Siri</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">AirPlay</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </li>
 
           <!-- Dropdown 8 -->
-          <li class="relative group">
+          <li class="group dropdownMenu">
             <a href="#" class="block py-2 text-black hover:bg-white rounded-md text-[0.8rem] ">Entertainment</a>
-            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
-              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+            <div class="marry absolute left-0 hidden text-black rounded-md space-y-2 w-[100vw] z-10 group-hover:block">
+              <section class="w-[100vw] pt-[3.3rem] pb-[4.3rem] bg-[#fafafc] navgbody">
+                <div class="" style="margin-inline-start: auto; margin-inline-end:auto; width:100vw; max-width:744px;">
+                  <div class="navcontent flex">
+                    <div>
+                      <ul class="">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">Explore Entertainment</h1>
+                        <li class="text-2xl font-medium pb-4"><a href="">Explore All Entertainment</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple One</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple TV+</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple Music</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple Arcade</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple Podcasts</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple Books</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple Store</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-20">
+                        <h1 class="text-xs text-[#6e6e73] font-light pb-4">Support</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple TV+ Support</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple Music Support</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </li>
 
           <!-- Dropdown 9 -->
-          <li class="relative group">
-            <a href="#" class="block py-2 text-black hover:bg-white rounded-md text-[0.8rem] ">Accesories</a>
-            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
-              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+          <li class="group dropdownMenu">
+            <a href="#" class="block py-2 text-black hover:bg-white rounded-md text-[0.8rem]">Accessories</a>
+            <div class="marry absolute left-0 hidden text-black rounded-md space-y-2 w-[100vw] z-10 group-hover:block">
+              <section class="w-[100vw] pt-[3.3rem] pb-[4.3rem] bg-[#fafafc] navgbody">
+                <div class="" style="margin-inline-start: auto; margin-inline-end:auto; width:100vw; max-width:744px;">
+                  <div class="navcontent flex">
+                    <div>
+                      <ul class="">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">Shop Accesories</h1>
+                        <li class="text-2xl font-medium pb-4"><a href="">Shop All Accesories</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Mac</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPad</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPhone</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Mac mini</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Apple Watch</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">AirPods</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">TV & Home</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-20">
+                        <h1 class="text-xs text-[#6e6e73] font-light pb-4">Explore Accesories</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Made by Apple</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Beats by Dr.Dre</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Air Tag</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </li>
 
           <!-- Dropdown 10 -->
-          <li class="relative group">
-            <a href="#" class="block py-2 text-black hover:bg-white rounded-md text-[0.8rem]">Support</a>
-            <div class="absolute left-0 hidden text-black rounded-md shadow-lg space-y-2 w-48 z-10 group-hover:block">
-              <a href="#" class="block px-4 py-2 text-black hover:underline">Web Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">App Development</a>
-              <a href="#" class="block px-4 py-2 text-black hover:underline">UI/UX</a>
+          <li class="group dropdownMenu">
+            <a href="#" class="block py-2  text-black hover:bg-white rounded-md text-[0.8rem]">Support</a>
+            <div class="marry absolute left-0 hidden text-black rounded-md space-y-2 w-[100vw] z-10 group-hover:block">
+              <section class="w-[100vw] pt-[3.3rem] pb-[4.3rem] bg-[#fafafc] navgbody">
+                <div class="" style="margin-inline-start: auto; margin-inline-end:auto; width:100vw; max-width:744px;">
+                  <div class="navcontent flex">
+                    <div>
+                      <ul class="">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">Explore Support</h1>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPhone</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Mac</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">iPad</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Watch</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">AirPods</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">Music</a></li>
+                        <li class="text-2xl font-medium pb-4"><a href="">TV</a></li>
+                        <li class="pt-3 text-xs font-medium"><a href="">Explore Support</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-20">
+                        <h1 class="text-xs text-[#6e6e73] font-light pb-4">Get Help</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Community</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Check Coverage</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Repair</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul class="ml-14">
+                        <h1 class="text-[#6e6e73] font-light pb-4 text-xs">Health Topics</h1>
+                        <li class="text-xs font-medium pb-4"><a href="">Get AppleCare+</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Apple Account and Password</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Billing & Subscriptions</a></li>
+                        <li class="text-xs font-medium pb-4"><a href="">Accessibility</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </li>
-
         </ul>
-
-        </li>
-
-        </ul>
-
       </div>
-
     </div>
+
+  
   </nav>
 
 
@@ -182,14 +510,13 @@
 
 
   <!-- nav2 -->
-  <nav class="bg-white w-full top-0 start-0">
+  <nav class="bg-white w-full top-0 start-0 pagecontent">
 
-    <div class="max-w-screen-xl flex flex-wrap items-center justify-around mx-auto h-fit">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-center mx-auto h-fit">
 
 
       <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-        <ul
-          class="flex flex-col p-4 md:p-0 mt-4 font-light  items-center rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-light gap-1 items-center rounded-lg md:space-x-4 rtl:space-x-reverse md:flex-row md:mt-0 md:ml-[-1rem] md:gap-0">
 
 
 
@@ -352,19 +679,13 @@
               Shop Mac</a>
           </li>
         </ul>
-
-        </li>
-
-        </ul>
-
       </div>
-
     </div>
   </nav>
 
 
   <!-- ProductNav -->
-  <nav class="mx-auto text-center text-[0.8rem] bg-[#f5f5f7] p-4 w-[100%] mt-[10px]">
+  <nav class="mx-auto text-center text-[0.8rem] bg-[#f5f5f7] p-4 w-[100%] mt-[10px] pagecontent">
     Get up to ₹10000.00 instant cashback on selected Mac models with eligible cards.◊ Plus up to 12 months of No Cost
     EMI.‡
     <a href="" class="hover:underline text-blue-600">
@@ -372,7 +693,8 @@
     </a>
   </nav>
 
-  <main>
+  <main class="pagecontent">
+
     <!-- section 1 -->
     <section class="mac py-28 m-auto">
       <div class="flex justify-between px-20">
@@ -386,34 +708,57 @@
         </div>
       </div>
 
-      <div class="video-container py-20 relative">
-        <video class="rounded-[2rem]" autoplay loop muted src="./assets/videos/apple.mp4"></video>
 
-        <!-- Play icon positioned directly on the video at the bottom-right corner -->
-        <div class="absolute playpause bottom-5 right-5 mb-[6rem] mr-[1rem] text-center">
-          <i class="fa-solid fa-play text-gray-600 text-xs text-center pl-[.15rem]" id="ctrlIcon"
-            aria-hidden="true"></i>
-        </div>
+        <div class="video-container py-20 rounded-3xl">
+          <video class="relative" autoplay loop muted src="./assets/videos/apple.mp4"></video>
+
+          <!-- Play icon positioned directly on the video at the bottom-right corner -->
+          <div class="absolute playpause bottom-5 right-5 mb-[5.5rem] mr-[1rem] text-center">
+            <i class="fa-solid fa-play text-gray-600 text-xs text-center pl-[.15rem]" id="ctrlIcon"
+            aria-hidden="true" onclick="style"></i>
+          </div>
       </div>
 
 
-      </div>
+      <!-- body blur -->
+      <script>
+// Select all elements with the ID or class selector for dropdown menus
+const dropdownMenus = document.querySelectorAll(".dropdownMenu"); // Use a class like .dropdownMenu if there are multiple elements
+
+// Loop through each dropdown menu and add event listeners
+dropdownMenus.forEach((dropdownMenu) => {
+  dropdownMenu.addEventListener("mouseenter", () => {
+    document.body.classList.add("blurred");
+  });
+
+  dropdownMenu.addEventListener("mouseleave", () => {
+    document.body.classList.remove("blurred");
+  });
+
+  
+});
+
+
+      </script>
+
     </section>
 
 
+
     <!-- section 2 -->
-    <section class="mac py-0 m-auto h-[125vh]">
+
+    <section class="mac py-0 m-auto h-[62rem]">
 
       <!-- div1 -->
       <div class="px-20">
         <div class="heading">
-          <h1 class="text-6xl font-medium">Get to know Mac.</h1>
+          <h1 class="text-6xl font-semibold">Get to know Mac.</h1>
         </div>
       </div>
 
       <!-- div2 -->
-      <div class="cards py-20 h-[100vh]">
-        <ul id="kfsjksfjk" class="flex gap-6 p-11 overflow-x-auto overflow-y-scroll w-full scrollcontent"
+      <div class="cards py-20 h-[51rem]">
+        <ul class="flex gap-6 p-11 overflow-x-auto overflow-y-scroll w-full scrollcontent"
           style="scroll-behavior: smooth;">
 
 
@@ -541,7 +886,7 @@
               <div class="card min-w-[350px]">
                 <div class="card-container relative">
                   <div class="card-info absolute z-10 p-8">
-                    <p class="text-white text-[1.1rem]">Durablitu</p>
+                    <p class="text-white text-[1.1rem]">Durability</p>
                     <p class="text-[1.475rem] font-semibold text-white" style="line-height: 1.8rem;">Build to stand
                       &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; the test of time.</p>
                   </div>
@@ -587,12 +932,12 @@
 
 
       <!-- div3 -->
-      <div class="flex flex-end">
-        <button id="hvskhbsf" class="scrol absolute ml-[88%] leftscroll">
+      <div class="flex flex-end ml-[88%] z-10 h-12 items-center">
+        <button id="hvskhbsf" class="scrol absolute ml-[0rem] leftscroll">
           <i class="fa-solid fa-chevron-left text-black w-full h-full flex items-center justify-center rounded-full text-xs"
             aria-hidden="true"></i>
         </button>
-        <button id="krjkfejk" class="scrol absolute ml-[92%] rightscroll">
+        <button id="krjkfejk" class="scrol absolute ml-[3rem] rightscroll">
           <i class="fa-solid fa-chevron-right text-black w-full h-full flex items-center justify-center rounded-full text-xs"
             aria-hidden="true"></i>
         </button>
@@ -636,19 +981,23 @@
           </ul>
         </div>
 
+
+
         <div class="w-[100vw] overflow-scroll" id="content">
           nothing error
           <!-- This area will dynamically load content based on the selected category -->
         </div>
+    </div>
+
 
 
         <!-- section 3 part1 -->
-        <div class="mac py-16 w-[100vw]">
+        <div class="mac pt-16 w-[100vw]">
 
           <!-- div1 -->
           <div class="flex justify-between items-end px-20">
             <div class="heading">
-              <h1 class="text-6xl font-medium w-[38rem]">Why Apple is the best place to buy Mac.</h1>
+              <h1 class="text-6xl font-semibold w-[38rem]">Why Apple is the best place to buy Mac.</h1>
             </div>
             <div class="text-lg font-light text-blue-600">
               <a href="" class="hover:underline">
@@ -669,7 +1018,7 @@
                     <button class="rounded-3xl p-6 bg-white card text-left h-[17rem] w-[22rem]">
                       <div class="pb-3"><img src="assets/images/card.png" alt="" style="min-height: 20px; width: 50px;">
                       </div>
-                      <h1 class="text-3xl font-medium w-[17rem]" style="line-height: 2rem;">Monthly payment options
+                      <h1 class="text-3xl font-medium w-[20rem]" style="line-height: 2rem;">Monthly payment options
                         available.
                       </h1>
                       <p class="py-4 w-[16rem] font-light" style="line-height: 1.3rem;">Choose the easy way to finance
@@ -720,7 +1069,7 @@
                     <button class="rounded-3xl p-6 bg-white card text-left h-[17rem] w-[22rem]">
                       <div class="pb-3"><img src="assets/images/ship.png" alt="" style="min-height: 20px; width: 50px;">
                       </div>
-                      <h1 class="text-3xl font-medium w-[17rem]" style="line-height: 2rem;">Get flexible delivery and
+                      <h1 class="text-3xl font-medium w-[19rem]" style="line-height: 2rem;">Get flexible delivery and
                         easy pickup.
                       </h1>
                       <p class="py-4 w-[16rem] font-light" style="line-height: 1.3rem;">Get free delivery or pickup at
@@ -748,7 +1097,7 @@
                       <div class="pb-3"><img src="assets/images/connectionc.png" alt=""
                           style="min-height: 20px; width: 70px;">
                       </div>
-                      <h1 class="text-3xl font-medium w-[17rem]" style="line-height: 2rem;">Meet your new Mac with
+                      <h1 class="text-3xl font-medium w-[20rem]" style="line-height: 2rem;">Meet your new Mac with
                         Personal Setup.</h1>
                       <p class="py-4 w-[16rem] font-light" style="line-height: 1.3rem;">Jump into online sessions with a
                         Specialist to set up your Mac and discover new features.</p>
@@ -774,7 +1123,7 @@
                     <button class="rounded-3xl p-6 bg-white card text-left h-[17rem] w-[22rem] mr-20">
                       <div class="pb-3"><img src="assets/images/loop.png" alt="" style="min-height: 20px; width: 50px;">
                       </div>
-                      <h1 class="text-3xl font-medium w-[17rem]" style="line-height: 2rem;">Save with Apple Trade In.
+                      <h1 class="text-3xl font-medium w-[18rem]" style="line-height: 2rem;">Save with Apple Trade In.
                       </h1>
                       <p class="py-4 w-[16rem] font-light" style="line-height: 1.3rem;">Get credit towards your next Mac
                         when you trade in an eligible device at an Apple Store.</p>
@@ -795,19 +1144,20 @@
 
 
           <!-- div3 -->
-          <div class="flex flex-end mt-[-2rem]">
-            <button class="scrol absolute ml-[88%] leftscroll">
-              <i class="fa-solid fa-chevron-left text-black text-xs text-center" aria-hidden="true"></i>
+          <div class="flex flex-end ml-[88%] mt-[-2rem]">
+            <button id="hvskhbsf" class="scrol absolute ml-[0] leftscroll">
+              <i class="fa-solid fa-chevron-left text-black w-full h-full flex items-center justify-center rounded-full text-xs"
+                aria-hidden="true"></i>
             </button>
-            <button class="scrol absolute ml-[92%] rightscroll">
-              <i class="fa-solid fa-chevron-right text-black  text-xs text-center" aria-hidden="true"></i>
+            <button id="krjkfejk" class="scrol absolute ml-[3rem] rightscroll">
+              <i class="fa-solid fa-chevron-right text-black w-full h-full flex items-center justify-center rounded-full text-xs"
+                aria-hidden="true"></i>
             </button>
           </div>
-        </div>
 
 
-        <!-- Left,Right-Scroll -->
-        <!-- <script>
+          <!-- Left,Right-Scroll -->
+          <!-- <script>
         // Select the single container and buttons using IDs
         const container = document.getElementById('kfsjksfjk'); // Single scroll container
         const backButton = document.getElementById('hvskhbsf'); // Back button
@@ -865,68 +1215,68 @@
 
       </script> -->
 
-        <!-- Global Left,Right-Scroll in js file -->
+          <!-- Global Left,Right-Scroll in js file -->
 
-        <script>
+          <script>
 
-          // Select all containers and buttons using class selectors
-          const containers = document.querySelectorAll('.scrollcontent'); // Multiple scroll containers
-          const backButtons = document.querySelectorAll('.leftscroll'); // Back buttons
-          const frontButtons = document.querySelectorAll('.rightscroll'); // Front buttons
+            // Select all containers and buttons using class selectors
+            const containers = document.querySelectorAll('.scrollcontent'); // Multiple scroll containers
+            const backButtons = document.querySelectorAll('.leftscroll'); // Back buttons
+            const frontButtons = document.querySelectorAll('.rightscroll'); // Front buttons
 
-          // Loop through each container and set up the corresponding functionality
-          containers.forEach((container, index) => {
-            const back = backButtons[index];
-            const front = frontButtons[index];
+            // Loop through each container and set up the corresponding functionality
+            containers.forEach((container, index) => {
+              const back = backButtons[index];
+              const front = frontButtons[index];
 
-            // Calculate the width of one card
-            var cardWidth = document.querySelector('.card').offsetWidth + 20; // Add gap if any
+              // Calculate the width of one card
+              var cardWidth = document.querySelector('.card').offsetWidth + 20; // Add gap if any
 
-            front.onclick = function () {
-              sideScroll(container, 'right', cardWidth * 1.2); // Adjust step for smoother scroll
-            };
+              front.onclick = function () {
+                sideScroll(container, 'right', cardWidth * 1.2); // Adjust step for smoother scroll
+              };
 
-            back.onclick = function () {
-              sideScroll(container, 'left', cardWidth * 1.2);  // Adjust step
-            };
+              back.onclick = function () {
+                sideScroll(container, 'left', cardWidth * 1.2);  // Adjust step
+              };
 
-            // Side scrolling function with smooth behavior
-            function sideScroll(element, direction, distance) {
-              const scrollPosition = direction === 'left'
-                ? element.scrollLeft - distance
-                : element.scrollLeft + distance;
-              element.scrollTo({ left: scrollPosition, behavior: 'smooth' });
-              setTimeout(() => updateScrollButtonColors(container, back, front), 300); // Delay to ensure buttons update after scroll
-            }
-
-            // Update button colors when at the edges
-            function updateScrollButtonColors(container, back, front) {
-              // Check if at the left edge
-              if (Math.round(container.scrollLeft) <= 0) {
-                back.style.backgroundColor = '#e2e2e5'; // Active color when at left edge
-                back.style.pointerEvents = 'none';
-              } else {
-                back.style.backgroundColor = '#f3f3f4'; // Active color when scrolling
-                back.style.pointerEvents = 'auto';
+              // Side scrolling function with smooth behavior
+              function sideScroll(element, direction, distance) {
+                const scrollPosition = direction === 'left'
+                  ? element.scrollLeft - distance
+                  : element.scrollLeft + distance;
+                element.scrollTo({ left: scrollPosition, behavior: 'smooth' });
+                setTimeout(() => updateScrollButtonColors(container, back, front), 300); // Delay to ensure buttons update after scroll
               }
 
-              // Check if at the right edge
-              if (Math.round(container.scrollLeft + container.clientWidth) >= container.scrollWidth) {
-                front.style.backgroundColor = '#f3f3f4'; // Edge color when at the right edge
-                front.style.pointerEvents = 'none';
-                back.style.backgroundColor = '#e2e2e5'; // Change to black when at the right edge
-              } else {
-                front.style.backgroundColor = '#e2e2e5'; // Active color when scrolling
-                front.style.pointerEvents = 'auto';
-                back.style.backgroundColor = '#f3f3f4'; // Active color for back button when scrolling
-              }
-            }
+              // Update button colors when at the edges
+              function updateScrollButtonColors(container, back, front) {
+                // Check if at the left edge
+                if (Math.round(container.scrollLeft) <= 0) {
+                  back.style.backgroundColor = '#e2e2e5'; // Active color when at left edge
+                  back.style.pointerEvents = 'none';
+                } else {
+                  back.style.backgroundColor = '#f3f3f4'; // Active color when scrolling
+                  back.style.pointerEvents = 'auto';
+                }
 
-            // Ensure the function updates on both page load and scrolling
-            container.addEventListener('scroll', () => updateScrollButtonColors(container, back, front));
-            window.addEventListener('load', () => updateScrollButtonColors(container, back, front));
-          });
-        </script>
+                // Check if at the right edge
+                if (Math.round(container.scrollLeft + container.clientWidth) >= container.scrollWidth) {
+                  front.style.backgroundColor = '#f3f3f4'; // Edge color when at the right edge
+                  front.style.pointerEvents = 'none';
+                  back.style.backgroundColor = '#e2e2e5'; // Change to black when at the right edge
+                } else {
+                  front.style.backgroundColor = '#e2e2e5'; // Active color when scrolling
+                  front.style.pointerEvents = 'auto';
+                  back.style.backgroundColor = '#f3f3f4'; // Active color for back button when scrolling
+                }
+              }
+
+              // Ensure the function updates on both page load and scrolling
+              container.addEventListener('scroll', () => updateScrollButtonColors(container, back, front));
+              window.addEventListener('load', () => updateScrollButtonColors(container, back, front));
+            });
+          </script>
 
 
 
@@ -939,13 +1289,13 @@
 
 
     <!-- section 4 -->
-    <section class="py-20 w-full">
-      <h1 class="px-20 py-4 text-6xl font-medium pb-16">Significant others.</h1>
+    <section class="py-20 w-full section4">
+      <h1 class="px-20 py-4 text-6xl font-semibold pb-16">Significant others.</h1>
 
       <div
-        class="flex justify-between bg-[rgba(250,250,250,1)] pl-20 py-40 mx-20 rounded-3xl overflow-hidden relative h-[48.5rem]">
-        <div class="w-[50%]">
-          <div class="w-[72%] pb-4">
+        class="flex coating justify-between bg-[rgba(250,250,250,1)] mx-8 py-20 pl-20 lg:py-40 lg:mx-20 rounded-3xl overflow-hidden relative h-[45em] lg:h-[48.5em]">
+        <div class="w-[50%] ">
+          <div class="lg:w-[72%] w-[90%] pb-4">
             <!-- First Toggle Section: Mac and iPhone -->
             <div class="toggle-section flex justify-between"
               onclick="toggleContent('toggleParagraph1', 'chevronIcon1', this, 'mac-iphone.jpg')">
@@ -955,16 +1305,16 @@
             </div>
             <p id="toggleParagraph1"
               class="w-[85%] font-light hiddenpara transition-all duration-300 ease-in-out opacity-0 transform -translate-y-4">
-              Answer calls or messages from your iPhone directly on your Mac. See and control what’s on your iPhone from
+              Answer calls or messages from your iPhone directly on your Mac. See and control what's on your iPhone from
               your Mac with iPhone Mirroring. Use Universal Clipboard to copy images, video or text from your iPhone,
               then paste into another app on your nearby Mac. And thanks to iCloud, you can access your files from
               either your iPhone or your Mac. And so much more.
             </p>
           </div>
 
-          <div class="h-[1px] w-[25vw] bg-[rgba(156,163,175,0.6)]"></div>
+          <div class="h-[1px] md:w-[30vw] lg:w-[25vw] bg-[rgba(156,163,175,0.6)] bar"></div>
 
-          <div class="w-[72%] py-4">
+          <div class="lg:w-[72%] w-[90%] py-4">
             <!-- Second Toggle Section: Mac and iPad -->
             <div class="toggle-section flex justify-between"
               onclick="toggleContent('toggleParagraph2', 'chevronIcon2', this, 'mac-ipad.jpg')">
@@ -980,9 +1330,9 @@
             </p>
           </div>
 
-          <div class="h-[1px] w-[25vw] bg-[rgba(156,163,175,0.6)]"></div>
+          <div class="h-[1px] md:w-[30vw] lg:w-[25vw] bg-[rgba(156,163,175,0.6)] bar"></div>
 
-          <div class="w-[72%] py-4">
+          <div class="lg:w-[72%] w-[90%] py-4">
             <!-- Third Toggle Section: Mac and Apple Watch -->
             <div class="toggle-section flex justify-between"
               onclick="toggleContent('toggleParagraph3', 'chevronIcon3', this, 'mac-applewatch.jpg')">
@@ -999,7 +1349,7 @@
         </div>
 
         <!-- div2 -->
-        <div class="w-[100%] mr-[-18rem] imagemargin">
+        <div class=" mr-[-6rem] imagemargin">
           <img id="toggleImage" src="assets/images/mac-iphone.jpg" width="100vw" height="auto" alt=""
             style="min-height: auto; min-width: 50rem;">
         </div>
@@ -1015,7 +1365,7 @@
         const imageContainer = document.querySelector('.imagemargin'); // Image container to modify margin
 
         if (!paragraph) {
-          // console.log(`Paragraph with ID "${paragraphId}" is found successfully.`);
+          console.log(`File with ID "${paragraphId}" is loaded successfully.`);
           return;
         }
 
@@ -1038,10 +1388,10 @@
           case 'mac-iphone.jpg':
           case 'mac-ipad.jpg':
           case 'mac-applewatch.jpg':
-            imageContainer.style.marginRight = "-18rem";
+            // imageContainer.style.marginRight = "-18rem";
             break;
           default:
-            imageContainer.style.marginRight = "-18rem"; // Default margin
+            // imageContainer.style.marginRight = "-18rem"; // Default margin
             break;
         }
 
@@ -1102,86 +1452,45 @@
 
 
 
-      <div class="accessories flex justify-between py-16 px-20 overflow-hidden relative w-full gap-6 text-center">
+      <div class="accessories flex justify-between py-16 px-12 overflow-hidden relative w-full gap-6 text-center max-w-[100vw] mx-auto">
 
         <!-- div1 -->
-        <button class="flex w-[50%]">
-          <div class="bg-[rgba(250,250,250,1)] rounded-3xl h-[38rem]">
-            <div class="py-20 px-20">
+        <button class="flex w-[50vw]">
+          <div class="bg-[rgba(250,250,250,1)] rounded-3xl h-[38rem] w-full">
+            <div class="py-20 px-20 text-center">
               <h1 class="text-3xl font-medium" style="line-height: 2rem;">Mac accessories</h1>
-              <p class="text-base font-light " style="line-height: 3rem;">Explore keyboards, mice and other
+              <p class="text-base text-center font-light " style="line-height: 3rem;">Explore keyboards, mice and other
                 essentials.</p>
               <p class="font-light hover:underline"><a class="text-blue-600" href="">Shop Mac accessories<i
                     class="fa-solid fa-chevron-right text-xs ml-1" aria-hidden="true"></i></a></p>
             </div>
-            <div><img src="assets/images/key,mouse.jpg" alt="" style="min-height: auto; min-width: 40rem;"></div>
+            <div class="flex justify-center"><img src="assets/images/key,mouse.jpg" alt="" style="min-height: auto;" class="w-full max-w-[560px] min-w-auto lg:min-w-[41rem] rounded-b-3xl"></div>
           </div>
         </button>
-
-
+      
         <!-- div2 -->
-        <button class="flex w-[50%]">
-          <div class="bg-[rgba(250,250,250,1)] rounded-3xl px-20 h-[38rem]">
-            <div class="py-16">
+        <button class="flex w-[50vw]">
+          <div class="bg-[rgba(250,250,250,1)] rounded-3xl px-20 h-[38rem] w-full flex flex-col justify-between">
+            <!-- Text Content -->
+            <div class="py-16 text-center">
               <h1 class="text-3xl font-medium" style="line-height: 2rem;">Studio Display</h1>
-              <!-- <p class="text-base font-light " style="line-height: 3rem;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The 68.29 cm (27″) 5K Retina display pairs beautifully with any Mac.</p> -->
-              <p class="text-base font-light py-4 px-24" style="line-height: 1.5rem;">The 68.29 cm (27″) 5K Retina
-                display pairs beautifully with any Mac.</p>
-              <p class="font-light hover:underline"><a class="text-blue-600" href="">Learn more<i
-                    class="fa-solid fa-chevron-right text-xs ml-1" aria-hidden="true"></i></a></p>
+              <p class="text-bas text-center font-light py-4 px-24" style="line-height: 1.5rem;">
+                The 68.29 cm (27″) 5K Retina display pairs beautifully with any Mac.
+              </p>
+              <p class="font-light hover:underline">
+                <a class="text-blue-600" href="">Learn more
+                  <i class="fa-solid fa-chevron-right text-xs ml-1" aria-hidden="true"></i>
+                </a>
+              </p>
             </div>
-            <div><img src="assets/images/imac.jpg" alt="" style="min-height: auto; max-width: 30rem;"></div>
+        
+            <!-- Image -->
+            <div class="flex justify-center"><img src="assets/images/imac.jpg" alt="" style="min-height: auto;" class="w-full lg:max-w-[30rem] rounded-b-3xl"></div>
           </div>
         </button>
-
+        
       </div>
-    </section>
-
-
-    <!-- section6 -->
-    <section class="w-full h-[100vh] py-40 bg-[#fafafc]">
-      <div class="" style="margin-inline-start: auto; margin-inline-end: auto; width: 87.5vw; max-width: 1680px;">
-        <div class="navcontent flex">
-          <div>
-            <ul class="">
-              <h1 class="text-[#6e6e73] font-light py-1">Explore Mac</h1>
-              <li class="text-3xl font-medium py-1"><a href="">Explore All Mac</a></li>
-              <li class="text-3xl font-medium py-1"><a href="">Macbook Air</a></li>
-              <li class="text-3xl font-medium py-1"><a href="">Macbook Pro</a></li>
-              <li class="text-3xl font-medium py-1"><a href="">iMac</a></li>
-              <li class="text-3xl font-mediu py-1"><a href="">Mac mini</a></li>
-              <li class="text-3xl font-medium py-1"><a href="">Mac Studio</a></li>
-              <li class="text-3xl font-medium py-1"><a href="">Mac Pro</a></li>
-              <li class="text-3xl font-medium py-1"><a href="">Displays</a></li>
-              <li class="pt-6 py-1 text-lg font-medium"><a href="">Compare Mac</a></li>
-              <li class="font-medium text-lg py-1"><a href="">Switch from PC to Mac</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul class="ml-20">
-              <h1 class="text-[#6e6e73] font-light py-1">Shop Mac</h1>
-              <li class="text-lg font-medium pt-1"><a href="">Shop Mac</a></li>
-              <li class="text-lg font-medium pt-1"><a href="">Mac Accessories</a></li>
-              <li class="text-lg font-medium pt-1"><a href="">Ways to Buy</a></li>
-            </ul>
-          </div>
-          <div>
-            <ul class="ml-12">
-              <h1 class="text-[#6e6e73] font-light py-1">More from Mac</h1>
-              <li class="text-lg font-medium pt-1"><a href="">Mac Support</a></li>
-              <li class="text-lg font-medium pt-1"><a href="">AppleCare+ for Mac</a></li>
-              <li class="text-lg font-medium pt-1"><a href="">macOS Sequoia</a></li>
-              <li class="text-lg font-medium pt-1"><a href="">Apple Intelligence</a></li>
-              <li class="text-lg font-medium pt-1"><a href="">Apps by Apple</a></li>
-              <li class="text-lg font-medium pt-1"><a href="">Continuity</a></li>
-              <li class="text-lg font-medium pt-1"><a href="">iCLoud+</a></li>
-              <li class="text-lg font-medium pt-1"><a href="">Mac for Business</a></li>
-              <li class="text-lg font-medium pt-1"><a href="">Education</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+      
 
 
 

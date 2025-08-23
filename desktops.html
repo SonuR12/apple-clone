@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./main.js"></script>
     <script src="./webkit.js" crossorigin="anonymous"></script>
 
 </head>
@@ -47,14 +48,27 @@
         min-height: 20px;
         width: 70px;
     }
+
+    @media (max-width:1000px) {
+        .kjvjk {
+            width: 99rem;
+        }
+    }
+
+    @media (min-width:1750px) {
+        .kjvjk {
+            width: 102rem;
+        }
+    }
+    
 </style>
 
 
 
 <body class="m-0 p-0 text-[#1d1d1f]">
     <!-- section1 -->
-    <section class="py-4 w-[100vw]">
-        <ul class="product flex gap-12 relative text-[#1d1d1f] overflow-y-scroll py-16 scrollcontent mr-[-22rem]">
+    <section class="py-4 w-[100vw] overflow-y-auto">
+        <ul class="product flex gap-12 relative w-full text-[#1d1d1f] overflow-y-scroll py-16 scrollcontent mr[-22rem]">
 
 
             <!-- mac -->
@@ -136,7 +150,8 @@
                             </div>
                         </div>
                         <div class="py-16 ml-[-1rem]">
-                            <div class="h-[1px] w-[112vw] bg-[rgba(156,163,175,0.6)] absolute"></div>
+                            <div class="kjvjk h-[1px] lg:w-[99rem] 2xl:w-[99rem] bg-[rgba(156,163,175,0.6)] absolute">
+                            </div>
                         </div>
 
                         <div>
@@ -289,8 +304,9 @@
             <li class="ml-[-1.2rem] pt-[16rem]">
                 <div class="cards">
                     <div class="min-w-[30px] laptops">
-                        <img class="ml-[-0.2rem]" src="./assets/images/product_tile_mac_studio__c24lhkuq4vee_large_2x.png"
-                            height="370px" width="370px" alt="" />
+                        <img class="ml-[-0.2rem]"
+                            src="./assets/images/product_tile_mac_studio__c24lhkuq4vee_large_2x.png" height="370px"
+                            width="370px" alt="" />
                     </div>
 
                     <div class="flex py-8 h-3 text-center justify-center gap-2">
@@ -370,7 +386,8 @@
                                 <div class="pt-4">
                                     <!-- <p class="text-xs">Up to</p> -->
                                     <p class="text-3xl font-medium py-3">12 ports</p>
-                                    <p class="text-xs w-[21rem] ml-[1.2rem]">Up to 6x Thunderbolt 4, 2x USB-A, up to 2x USB-C, HDMI, 10Gb Ethernet, SDXC, headphone jack</p>
+                                    <p class="text-xs w-[21rem] ml-[1.2rem]">Up to 6x Thunderbolt 4, 2x USB-A, up to 2x
+                                        USB-C, HDMI, 10Gb Ethernet, SDXC, headphone jack</p>
                                 </div>
 
                             </div>
@@ -382,7 +399,7 @@
 
 
             <!-- mac pro -->
-            <li class="ml-[-1.2rem] mt-[-2rem]">
+            <li class="ml-[-1.2rem] mt-[-2rem] pr-12">
                 <div class="cards">
                     <div class="min-w-[30px] laptops">
                         <img class="" src="./assets/images/product_tile_mac_pro__6q3qt8073f6e_large_2x.png"
@@ -467,7 +484,8 @@
                                 <div class="pt-[1.1rem]">
                                     <!-- <p class="text-xs">Up to</p> -->
                                     <p class="text-3xl font-medium py-3 ml-[2rem]">8 ports</p>
-                                    <p class="text-xs w-[21rem] ml-[1.2rem]">8x Thunderbolt 4, 3x USB-A, 2x HDMI, 2x 10Gb Ethernet, 2x Serial ATA, headphone jack
+                                    <p class="text-xs w-[21rem] ml-[1.2rem]">8x Thunderbolt 4, 3x USB-A, 2x HDMI, 2x
+                                        10Gb Ethernet, 2x Serial ATA, headphone jack
                                     </p>
                                 </div>
 
@@ -491,6 +509,68 @@
             </button>
         </div>
 
+        <script>
+
+            // Select all containers and buttons using class selectors
+            const containers = document.querySelectorAll('.scrollcontent'); // Multiple scroll containers
+            const backButtons = document.querySelectorAll('.leftscroll'); // Back buttons
+            const frontButtons = document.querySelectorAll('.rightscroll'); // Front buttons
+
+            // Loop through each container and set up the corresponding functionality
+            containers.forEach((container, index) => {
+                const back = backButtons[index];
+                const front = frontButtons[index];
+
+                // Calculate the width of one card
+                var cardWidth = document.querySelector('.cards').offsetWidth + 20; // Add gap if any
+
+                front.onclick = function () {
+                    sideScroll(container, 'right', cardWidth * 1.2); // Adjust step for smoother scroll
+                };
+
+                back.onclick = function () {
+                    sideScroll(container, 'left', cardWidth * 1.2);  // Adjust step
+                };
+
+                // Side scrolling function with smooth behavior
+                function sideScroll(element, direction, distance) {
+                    const scrollPosition = direction === 'left'
+                        ? element.scrollLeft - distance
+                        : element.scrollLeft + distance;
+                    element.scrollTo({ left: scrollPosition, behavior: 'smooth' });
+                    setTimeout(() => updateScrollButtonColors(container, back, front), 300); // Delay to ensure buttons update after scroll
+                }
+
+                // Update button colors when at the edges
+                function updateScrollButtonColors(container, back, front) {
+                    // Check if at the left edge
+                    if (Math.round(container.scrollLeft) <= 0) {
+                        back.style.backgroundColor = '#e2e2e5'; // Active color when at left edge
+                        back.style.pointerEvents = 'none';
+                    } else {
+                        back.style.backgroundColor = '#f3f3f4'; // Active color when scrolling
+                        back.style.pointerEvents = 'auto';
+                    }
+
+                    // Check if at the right edge
+                    if (Math.round(container.scrollLeft + container.clientWidth) >= container.scrollWidth) {
+                        front.style.backgroundColor = '#f3f3f4'; // Edge color when at the right edge
+                        front.style.pointerEvents = 'none';
+                        back.style.backgroundColor = '#e2e2e5'; // Change to black when at the right edge
+                    } else {
+                        front.style.backgroundColor = '#e2e2e5'; // Active color when scrolling
+                        front.style.pointerEvents = 'auto';
+                        back.style.backgroundColor = '#f3f3f4'; // Active color for back button when scrolling
+                    }
+                }
+
+                // Ensure the function updates on both page load and scrolling
+                container.addEventListener('scroll', () => updateScrollButtonColors(container, back, front));
+                window.addEventListener('load', () => updateScrollButtonColors(container, back, front));
+            });
+
+        </script>
+
 
     </section>
 
@@ -499,69 +579,9 @@
 
 
 
-    <!-- <script>
 
-        // Select all containers and buttons using class selectors
-        const containers = document.querySelectorAll('.scrollcontent'); // Multiple scroll containers
-        const backButtons = document.querySelectorAll('.leftscroll'); // Back buttons
-        const frontButtons = document.querySelectorAll('.rightscroll'); // Front buttons
-        
-        // Loop through each container and set up the corresponding functionality
-        containers.forEach((container, index) => {
-          const back = backButtons[index];
-          const front = frontButtons[index];
-        
-          // Calculate the width of one card
-          var cardWidth = document.querySelector('.cards').offsetWidth + 20; // Add gap if any
-          
-          front.onclick = function () {
-            sideScroll(container, 'right', cardWidth * 1.2); // Adjust step for smoother scroll
-          };
-          
-          back.onclick = function () {
-            sideScroll(container, 'left', cardWidth * 1.2);  // Adjust step
-          };
-          
-          // Side scrolling function with smooth behavior
-          function sideScroll(element, direction, distance) {
-            const scrollPosition = direction === 'left'
-              ? element.scrollLeft - distance
-              : element.scrollLeft + distance;
-            element.scrollTo({ left: scrollPosition, behavior: 'smooth' });
-            setTimeout(() => updateScrollButtonColors(container, back, front), 300); // Delay to ensure buttons update after scroll
-          }
-        
-          // Update button colors when at the edges
-          function updateScrollButtonColors(container, back, front) {
-            // Check if at the left edge
-            if (Math.round(container.scrollLeft) <= 0) {
-              back.style.backgroundColor = '#e2e2e5'; // Active color when at left edge
-              back.style.pointerEvents = 'none';
-            } else {
-              back.style.backgroundColor = '#f3f3f4'; // Active color when scrolling
-              back.style.pointerEvents = 'auto';
-            }
-        
-            // Check if at the right edge
-            if (Math.round(container.scrollLeft + container.clientWidth) >= container.scrollWidth) {
-              front.style.backgroundColor = '#f3f3f4'; // Edge color when at the right edge
-              front.style.pointerEvents = 'none';
-              back.style.backgroundColor = '#e2e2e5'; // Change to black when at the right edge
-            } else {
-              front.style.backgroundColor = '#e2e2e5'; // Active color when scrolling
-              front.style.pointerEvents = 'auto';
-              back.style.backgroundColor = '#f3f3f4'; // Active color for back button when scrolling
-            }
-          }
-        
-          // Ensure the function updates on both page load and scrolling
-          container.addEventListener('scroll', () => updateScrollButtonColors(container, back, front));
-          window.addEventListener('load', () => updateScrollButtonColors(container, back, front));
-        });
 
-        </script> -->
-
-    <script class="script">
+    <!-- <script class="script">
 
         // Select all containers and buttons using class selectors
         const containers = document.querySelectorAll('.scrollcontent'); // Multiple scroll containers
@@ -622,7 +642,7 @@
         });
 
 
-    </script>
+    </script> -->
 
 
 
