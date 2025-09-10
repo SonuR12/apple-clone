@@ -1,4 +1,4 @@
-# 🍎 Apple Clone
+# Apple Clone
 
 A responsive front-end clone of the Apple homepage, built using **HTML**, **CSS**, and **Flowbite**.  
 This project replicates the sleek design and layout of Apple's official website.
