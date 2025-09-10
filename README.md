@@ -30,8 +30,7 @@ apple-clone/
 
 ### 📸 Screenshot
 
-![Apple Clone Screenshot](https://raw.githubusercontent.com/SonuR12/apple-clone/main/assets/apple.png
-)
+![Apple Clone Screenshot](https://github.com/SonuR12/apple-clone/blob/main/assets/apple.png)
 
 
 *(Note: Replace the screenshot URL with the actual path to your screenshot image in the repository.)*
