@@ -28,7 +28,7 @@ apple-clone/
 
 ---
 
-### 📸 Screenshot
+## 📸 Screenshot
 
 ![Apple Clone Screenshot](https://github.com/SonuR12/apple-clone/blob/main/assets/apple.png)
 
