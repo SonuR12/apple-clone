@@ -33,8 +33,6 @@ apple-clone/
 ![Apple Clone Screenshot](https://raw.githubusercontent.com/SonuR12/apple-clone/main/assets/apple.png)
 
 
-*(Note: Replace the screenshot URL with the actual path to your screenshot image in the repository.)*
-
 ---
 
 ### 🛠️ Built With
